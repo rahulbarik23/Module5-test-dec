@@ -1,0 +1,195 @@
+body{
+    padding-top: 59px;
+}
+
+html,body {
+    margin:0;
+   
+    overflow-x:hidden;
+}
+.navbarcolour{
+    background-color: black;
+    margin-bottom: 20px;
+}
+.navbar li a:hover{
+    background-color: grey;
+
+}
+
+#header-text{
+    font-weight: 700;
+    font-size: 130px;
+    padding-top:40px;
+    animation: fade 2s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#headerimg{
+    width:450px;
+    height: 250px;
+    margin-top:200px;
+    
+}
+
+#aboutus-img{
+    width:550px;
+    height: 500px;
+}
+
+#rightabout-us{
+    padding-left:100px;
+}
+
+.aboutus{
+    padding-bottom: 40px;
+    font-size: 70px;
+    font-weight: 700;
+}
+.ourservices{
+    padding-bottom: 40px;
+    font-size: 100px;
+    font-weight: 700; 
+}
+
+.slider{
+    margin-right:20px;
+    flex-direction: row;
+    justify-content: space-between;
+    display: inline-block;
+}
+
+.line
+{
+    align-items: center;
+    width:90%;
+    height:10px;
+    border-width:2; 
+    color:black !important; 
+    background-color:black !important;
+}
+
+input { 
+   width:50% !important;
+   display:flex;
+   justify-items: center !important;
+}
+
+.button{
+    width: 10% !important;
+    margin-left:360px;  
+}
+
+.sticky{
+    top: 0;
+    position: fixed;
+    background-color: black;
+    width:100%;
+    z-index: 10;
+}
+
+.bg{
+    background-color: black;
+}
+
+.hover-box:hover{
+    background-color: black;
+    color: white;
+}
+
+.scrolling-wrapper {
+    display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  margin:20px;
+}
+.card {
+    flex: 0 0 auto;
+    padding:10px;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+.mobile-view-body{
+    padding-left:20px;
+}
+
+
+
+#message {
+    opacity: 0;
+}
+input[type="text"]{
+    border: 2px solid white;
+    width: 70%;
+    color: white;
+}
+input[type="text"]:focus{
+    outline: none;
+}
+input[type="email"]{
+    border: 2px solid white;
+    width: 70%;
+    color: white;
+}
+
+  
+
+
+@media screen and (max-width:768px)
+{
+    .mobile-view-header-btn{
+      margin-right:10px;
+    }
+    .card{
+        width:300px;
+        height:300px;
+        margin-bottom: 10px;
+    }
+    #header-text{
+        font-weight: 500;
+        font-size: 60px;
+    }
+
+    #header-img{
+        width:300px;
+        height: 150px;
+        margin-top:-40px;
+        padding-right:35px;
+    }
+
+    #aboutus-img{
+        width:300px;
+        height: 250px;
+       
+    }
+
+    .mobile-view-img{
+        display: flex;
+        justify-content: center;
+    }
+
+    #right-aboutus{
+       padding-left:0px !important;
+    }
+
+    .button{
+        width: 30% !important;
+        margin-left:100px;  
+    }
+
+    .mobile-view-body{
+       padding-left:15px;
+    }
+}
+
+
+
